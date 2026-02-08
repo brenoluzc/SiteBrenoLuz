@@ -1,0 +1,36 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;}
+    
+:root{
+    --branco:#ffffff;
+    --branconeve: #f1f1f1;
+    --azul: #4d96ff;
+    --preto: #000000;
+    --grafite: #383838;}
+
+body{background-color: var(--branconeve);}
+h1{font-size: 2rem;}
+
+p{
+    text-align:justify;
+    font-size: 1rem;}
+
+.seccontent{
+    max-width: 1220px;
+    width: 100%;
+    margin: 200px auto;
+}
+.postcontent{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .postcontent{
+        max-width: 320px;
+        width: 100%;}
+}
+

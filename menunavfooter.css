@@ -1,0 +1,347 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;}
+    
+::-webkit-scrollbar{width: 10px;}
+::-webkit-scrollbar-track{background: var(--branco);}
+::-webkit-scrollbar-thumb{
+    background: var(--grafite);
+    border-radius: 3px;}
+:root{
+    --branco:#ffffff;
+    --branconeve: #f1f1f1;
+    --azul: #4d96ff;
+    --preto: #000000;
+    --grafite: #383838;}
+
+.hamburger{display: none;}
+
+.divtop{
+    height: 50px;
+    background-color: var(--branco);
+    z-index: 1;}
+
+.Logo-Breno{
+        position: relative;
+        height: 100%;
+        left: 10%;}
+
+.iconul{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    float: right;
+    height: 100%;
+    right: 5%;}
+
+.iconli, .icon{
+    font-size: 1.4rem;
+    margin: 20px;
+    transition: .2s;
+    cursor: pointer;}
+
+#logo{color: var(--azul)}
+#logof{color: var(--branco);}
+.iconli:hover{
+    color: var(--preto);
+    transform: rotate(20deg);
+    transition: .2s;}
+
+.menu{
+    background-color: var(--branco);
+    height: 50px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    position: sticky;
+    top: 0px;
+    box-shadow:  0px 0.5px -0px var(--azul);
+    z-index: 1;}
+
+.menu .ullista{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;}
+
+.menu .ullista .lista{
+    position: relative;
+    list-style-type: none;
+    display: inline;
+    margin: 50px;
+    bottom: 30px;}
+    
+.listalinknav{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: var(--preto);
+    border-radius: 3px;
+    transition: 1s;
+    cursor: pointer;}
+    .listalinknav:hover{
+        transition: 0.5s;
+        color: var(--branco);
+        background-color: var(--azul);}
+
+        #linkactive{
+    color: var(--branco);
+    background-color: var(--grafite);
+    border-radius:3px;}
+
+.rodapé{
+    width: 100%;
+    height: 140px;
+    background-color: var(--grafite);
+    display: flex;
+    justify-content:center;}
+
+.diviconfooter{
+    position: relative;
+    width: 300px;}
+
+.footerul{
+    position: relative;
+    display: flex;
+    justify-content: center;}
+
+.footerli{
+    list-style-type: none;
+    margin: 20px;
+    font-size: 1.5rem;
+    transition: .1s;
+    cursor: pointer;}
+.footerli:hover{
+    transform: rotate(20deg);
+    transition: 0.5s;}
+address{
+    color: var(--branconeve);
+    text-align: center;}
+
+.divlinkfooter{
+position: absolute;
+left: 5%;}
+
+.linkfooter{
+    margin: 20px;
+    list-style-type: none;}
+.linkpág{
+    color: var(--branco);
+    text-decoration: none;
+    transition: 0.5s;}
+.linkpág:hover{color: var(--azul);}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+.divtop{
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px var(--azul);
+    border-radius: 0 0 10px 10px;}
+
+    .Logo-Breno{
+        position: inherit;
+        height: 100%;
+        display: block;
+        margin: 0 auto;}
+
+.iconul, .iconli, .icon, .redesocial{display: none;}
+a,button{cursor: pointer; text-align: center;}
+
+.menu{
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+    right: -500px;
+    width: 300px;
+    height: 70%;
+    background-color: #d8d8d8ea;
+    border-radius: 70px 0 0 70px;
+    transition: 0.4s;}
+
+.menu .ullista{
+    position: relative;
+    display: block;
+    height: 0;
+    top: 100px;}
+
+.listalinknav{
+    display: block;
+    position: relative;
+    background-color: var(--azul);
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border-bottom: groove 3px var(--azul);
+    border-left: groove 3px var(--azul);
+    border-radius: 5px;}
+
+#linkactive{
+    width: 40%;
+    color: var(--branco);
+    background-color: var(--grafite);
+    border-bottom: groove 3px var(--preto);
+    border-left: groove 3px var(--preto);}
+
+.hamburger{
+    position: fixed;
+    display: block;
+    top: 32px;
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    border: 0;
+    background: var(--grafite);}
+
+.barra{
+    position: inherit;
+    top: 8px;
+    background: var(--branco);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.4s ease-in;}
+
+#barra1{
+    margin: 2px 0;
+    left: 4px;
+    width: 75%;}
+#barra2{
+    margin: 10px 0;
+    left: 4px;
+    width: 65%}
+#barra3{
+    margin: 18px 0;
+    left: 4px;
+    width: 75%}
+
+.menu.active{right: 0;}
+
+.hamburger.open #barra1{
+    background-color: var(--branco);
+    transform: rotate(45deg) translate(6px, 5px);}
+
+.hamburger.open #barra2{background-color: transparent;}
+
+.hamburger.open #barra3{
+    background-color: var(--branco);
+    transform: rotate(-45deg) translate(6px, -5px);}
+
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .divtop{
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px var(--azul);
+    border-radius: 0 0 10px 10px;}
+
+    .Logo-Breno{
+        position: inherit;
+        height: 100%;
+        display: block;
+        margin: 0 auto;}
+
+.iconul, .iconli, .icon, .redesocial{display: none;}
+a,button{cursor: pointer; text-align: center;}
+
+.menu{
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+    right: -500px;
+    width: 300px;
+    height: 70%;
+    background-color: #d8d8d8ea;
+    border-radius: 70px 0 0 70px;
+    transition: 0.4s;}
+
+.menu .ullista{
+    position: relative;
+    display: block;
+    height: 0;
+    top: 50px;}
+
+.listalinknav{
+    display: block;
+    position: relative;
+    background-color: var(--azul);
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border-bottom: groove 3px var(--azul);
+    border-left: groove 3px var(--azul);
+    border-radius: 5px;}
+
+#linkactive{
+    width: 40%;
+    color: var(--branco);
+    background-color: var(--grafite);
+    border-bottom: groove 3px var(--preto);
+    border-left: groove 3px var(--preto);}
+
+.hamburger{
+    position: fixed;
+    display: block;
+    top: 32px;
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    border: 0;
+    background: var(--grafite);}
+
+.barra{
+    position: inherit;
+    top: 8px;
+    background: var(--branco);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.4s ease-in;}
+
+#barra1{
+    margin: 2px 0;
+    left: 4px;
+    width: 75%;}
+#barra2{
+    margin: 10px 0;
+    left: 4px;
+    width: 65%}
+#barra3{
+    margin: 18px 0;
+    left: 4px;
+    width: 75%}
+
+.menu.active{right: 0;}
+
+.hamburger.open #barra1{
+    background-color: var(--branco);
+    transform: rotate(45deg) translate(6px, 5px);}
+
+.hamburger.open #barra2{background-color: transparent;}
+
+.hamburger.open #barra3{
+    background-color: var(--branco);
+    transform: rotate(-45deg) translate(6px, -5px);}
+
+.rodapé{justify-content:right;}
+.diviconfooter{width: auto;}
+.footerli{margin: 10px;}
+.footerli:hover{margin: 10px;}
+address{font-size: .7rem;}
+.divlinkfooter{left: 1%;}
+.linkfooter{margin: 20px 5px;}
+.linkpág{
+font-size: .7rem;}
+}

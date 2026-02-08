@@ -1,0 +1,133 @@
+html {overflow-x: hidden;}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;}
+
+h1{font-size: 2rem;}
+p{font-size: 1.2rem;}
+
+:root{
+    --branco:#ffffff;
+    --branconeve: #f1f1f1;
+    --azul: #4d96ff;
+    --preto: #000000;
+    --grafite: #383838;}
+
+body {background-color: var(--branconeve);}
+.secsobreum {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+    height: auto;
+    top: 100px;}
+
+.divsobre{
+    position:inherit;
+    display:flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;}
+
+#imgsobre{
+    position: inherit;
+    margin-left: 10%;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px var(--grafite);}
+
+#sobretxt{
+    position: inherit;
+    width: 500px;
+    height: auto;}
+
+#eusoubreno{
+    font-size: 7rem;
+    text-align: right;
+    color: var(--grafite);}
+
+#ponto{color: var(--azul)}
+
+.secsobredois{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    max-width: 1220px;
+    width: 100%;
+    height: auto;}
+
+#box1{
+    position: inherit;
+    background-color: var(--branco);
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 0 100px 100px 0;
+    padding: 60px;}
+#box2{
+    width: 80%;
+    height: auto;
+    margin-top: 100px;
+    background-color: var(--azul);
+    border-radius: 10px;
+    padding: 60px;}
+
+details{
+    border: 1px solid var(--branco);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background: var(--azul);}
+
+summary{
+    color: var(--branco);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+.secsobreum {
+    max-width: 768px;
+    width: 100%;}
+
+#imgsobre {width: 300px;}
+#sobretxt{width: 300px;}
+#eusoubreno {font-size: 4rem;}
+
+#box1{
+    max-width: 400px;
+    width: 100%;}
+p{font-size: 1rem;}
+
+#box2{
+    margin: 70px 0;
+    border-radius: 0 10px 10px 0;}
+}
+@media (min-width: 320px) and (max-width: 767px){
+.secsobreum{
+    max-width: 320px;
+    width: 100%;}
+
+#imgsobre {width: 120px;}
+#sobretxt{width: 150px;}
+#eusoubreno{font-size: 1.7rem;}
+
+.secsobredois{
+    max-width: 360px;
+    width: 100%;}
+
+#box1{
+    max-width: 250px;
+    width: 100%;
+    padding: 30px;}
+
+h1{font-size: 1.3rem;}
+p{font-size: 0.8rem;}
+
+#box2{
+    margin: 40px 0;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;}
+}
