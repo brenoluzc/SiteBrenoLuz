@@ -4,12 +4,20 @@ html{overflow-x: hidden;}
     margin: 0;
     padding: 0;}
 p{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
     font-weight: 550;
     margin-bottom: 1rem;}
 
 h1{font-size: 1.4rem;
     margin-bottom: 60px;}
+
+#postli{line-height: 1.7;
+font-size: 1.1rem;
+color: #003f97;}
+
+table{margin:auto}
+tr{text-align: center;}
 
 body{background-color: var(--branconeve);}
 
@@ -72,7 +80,6 @@ body{background-color: var(--branconeve);}
     text-align: left;}
     
 #autlink{color: blue;}
-
 
 @media(min-width: 768px) and (max-width: 1023px){
 
